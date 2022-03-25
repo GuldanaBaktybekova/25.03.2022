@@ -1,23 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import ArticleList from './components/ArticleList';
 
 function App() {
+  const veggies = ["Carrot", "Potato", "Strawberry"];
+  const fruits = [
+    {name: "Mango", color: "Yellow"},
+    {name: "Apple", color: "Green"},
+    {name: "Cherry", color: "Red"},
+  ];
+  const veggiesList = veggies.map((veggie) =>{
+    return<li>{veggie}</li>
+  });
+  const fruitsList = fruits.map((fruit) => (
+    <li>
+      {fruit.name}: {fruit.color}
+    </li>
+  ));
+
+  const articles = [
+    {title: "This is an example article", url: "#", teaser: "lorem"},
+    {title: "Another article as an example", url: "#", teaser: "lorem"},
+    {title: "Last example article", url: "#", teaser: "lorem"},
+  ];
+
+  
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello world</h1>
+     <ul>
+     {veggiesList}
+     </ul>
+     <ol>{veggiesList}</ol>
+     <ul>
+     {fruitsList}
+     </ul>
+
+     <ArticleList src={articles}/>
+ 
     </div>
   );
 }
