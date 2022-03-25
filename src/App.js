@@ -1,5 +1,7 @@
 import ArticleList from './components/ArticleList';
 
+import ProgressBar from "./components/ProgressBar/ProgressBar";
+
 function App() {
   const veggies = ["Carrot", "Potato", "Strawberry"];
   const fruits = [
@@ -36,6 +38,13 @@ function App() {
      </ul>
 
      <ArticleList src={articles}/>
+
+     <ProgressBar progress={25} />
+      <ProgressBar progress={50} color="orange" />
+      <ProgressBar progress={30} />
+      <ProgressBar progress={60} />
+      <ProgressBar progress={90} />
+
  
     </div>
   );

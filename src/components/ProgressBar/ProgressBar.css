@@ -1,0 +1,10 @@
+.ProgressBar {
+  background-color: aliceblue;
+  border-radius: .2rem;
+  overflow: hidden;
+  margin: .5rem;
+}
+.ProgressBar > div {
+  padding: .5rem 0;
+  background-color: rgb(28, 99, 176);
+} 
