@@ -38,7 +38,7 @@ function App() {
      </ul>
 
      <ArticleList src={articles}/>
-
+ 
      <ProgressBar progress={25} />
       <ProgressBar progress={50} color="orange" />
       <ProgressBar progress={30} />
