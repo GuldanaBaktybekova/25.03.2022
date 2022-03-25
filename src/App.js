@@ -17,6 +17,7 @@ function App() {
       {fruit.name}: {fruit.color}
     </li>
   ));
+  
 
   const articles = [
     {title: "This is an example article", url: "#", teaser: "lorem"},
