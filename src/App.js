@@ -51,7 +51,23 @@ function App() {
       <ProgressBar progress={60} />
       <ProgressBar progress={90} />
 
-     
+      <table>
+        <tr>
+          <td>Example</td>
+          <td>Example</td>
+          <td>Example</td>
+        </tr>
+        <tr>
+          <td>Example</td>
+          <td>Example</td>
+          <td>Example</td>
+        </tr>
+        <tr>
+          <td>Example</td>
+          <td>Example</td>
+          <td>Example</td>
+        </tr>
+      </table>
     </div>
   );
 }

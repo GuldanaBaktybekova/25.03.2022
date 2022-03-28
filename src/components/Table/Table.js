@@ -1,9 +1,11 @@
 import "./Table.css";
 function Table(props) {
   const table = props.src.map((item) => (
-    <tr>
+    <table>
+      <tr>
       <td>{item}</td>
     </tr>
+    </table>
   ));
   return <table className="Table">{table}</table>;
 }

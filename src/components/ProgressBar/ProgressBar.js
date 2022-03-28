@@ -1,5 +1,6 @@
 import "./ProgressBar.css";
 
+
 function ProgressBar(props) {
   const style = {
     width: props.progress + "%",
